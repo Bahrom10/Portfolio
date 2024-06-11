@@ -4,7 +4,7 @@
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/dm-sans-v15-latin-regular.woff2') format('woff2'); 
-  }
+}
   
 @font-face {
   font-display: swap; 
@@ -22,66 +22,69 @@
   src: url('../fonts/dm-sans-v15-latin-700.woff2') format('woff2'); 
 }
 
-*{
+html{
+    scroll-behavior: smooth;
+}
+
+* {
     font-family: "DM Sans";
     font-weight: 700;
     box-sizing: border-box;
     color: #FFFFFF;
 }
 
-body{
+body {
     padding: 40px 90px;
     background-color: #171717;
-
+    transition: all .3s ease;
 }
 
-.navbar{
+.navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 130px;
 }
-.navbar_title{
+.navbar_title {
     color: #FFFFFF;
-    font-size: 36;
+    font-size: 36px;
 }
-.navbar_list{
+.navbar_list {
     display: flex;
     gap: 40px;
     list-style: none;
 }
-.navbar_link{
+.navbar_link {
     font-weight: 400;
-    font-size: 18;
+    font-size: 18px;
     color: #FFFFFF;
     text-decoration: none;
 }
 
-
-.main{
+.main {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 50px;
 }
 
-.main_title{
+.main_title {
     color: #FFFFFF;
     font-size: 48px;
     margin-bottom: 24px;
 }
 
-.main_subtitle{
+.main_subtitle {
     color: gray;
     font-size: 18px;
     font-weight: 500;
 }
 
-.cxz{
+.cxz {
     margin-top: 35px;
 }
 
-.main_cv{
+.main_cv {
     background: #27AE60;
     font-size: 14px;
     font-weight: 500;
@@ -96,7 +99,7 @@ body{
     color: black;
 }
 
-.main_more{
+.main_more {
     margin-left: 10px;
     padding: 12px 24px;
     font-size: 14px;
@@ -113,7 +116,7 @@ body{
     color: black;
 }
 
-.main_right{
+.main_right {
     border-radius: 50%;
     border-color: #202020;
     border-width: 27px;
@@ -122,38 +125,38 @@ body{
     display: block;
 }
 
-.about{
+.about {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.about__title{
+.about__title {
     font-size: 48px;
 }
 
-.about_text{
+.about_text {
     font-size: 18px;
     font-weight: 400;
     text-align: center;
     max-width: 745px;
 }
 
-.contacts{
+.contacts {
     padding: 40px 225px;    
     display: flex;
     justify-content: space-around;
     list-style: none;
 }
 
-.contact{
+.contact {
     gap: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.contact_circle{
+.contact_circle {
     width: 62px;
     height: 62px;
     border-radius: 50%;
@@ -162,18 +165,18 @@ body{
     position: relative;
 }
 
-.contact_title{
+.contact_title {
     font-size: 18px;
 }
 
-.contact_subtitle{
+.contact_subtitle {
     display: flex;
     justify-items: center;
     font-size: 18px;
     max-width: 175px;
 }
 
-.contact_circle_green{
+.contact_circle_green {
     background: #27AE60;
     height: 12px;
     width: 12px;
@@ -186,7 +189,7 @@ body{
     transform: translate(-50%, -50%);
 }
 
-.work{
+.work {
     padding: 120px;
     display: flex;
     flex-direction: column;
@@ -194,16 +197,73 @@ body{
     gap: 100px;
 }
 
-.work_title{
+.work_title {
     font-size: 48px;
 }
 
-.work_spheres{
+.work_spheres {
     display: grid;
-    
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
 }
 
-.work_sphere{
+.work_sphere {
     background: #212121;
-    padding: 50px 40px 70px 40px;
+    padding: 35px 70px 25px 50px;
+    position: relative;
+}
+
+.work_sphere::after {
+    content: "";
+    background: #27AE60;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    transition: height 0.3s;
+}
+
+.work_sphere:hover::after {
+    height: 5px;
+}
+
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills_body{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 120px;
+    background: #212121;
+    padding: 65px 125px;
+}
+
+.skill_body{
+    font-size: 72px;
+    color: #4f4f4f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill_body span{
+    color: #27AE60;
+    font-size: 24px;
+}
+
+
+.touch{
+    padding: 100px 343px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.touch_title{
+    font-size: 48px;
 }

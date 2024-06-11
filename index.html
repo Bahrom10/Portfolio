@@ -10,9 +10,9 @@
     <div class="navbar">
         <h2 class="navbar_title">Bahrom</h2>
         <ul class="navbar_list">
-            <a href="" class="navbar_link">About me</a>
-            <a href="" class="navbar_link">Services</a>
-            <a href="" class="navbar_link">Contact me</a>
+            <a href="#about" class="navbar_link">About me</a>
+            <a href="#work" class="navbar_link">Services</a>
+            <a href="#touch" class="navbar_link">Contact me</a>
         </ul>
     </div>
     <div class="main">
@@ -26,7 +26,7 @@
         </div>
         <img src="assets/img/image.png" alt="" class="main_right">
     </div>
-    <div class="about">
+    <div class="about" id="about">
         <h2 class="about_title">About</h2>
         <p class="about_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
     </div>
@@ -52,7 +52,7 @@
             <a href="tel:+998943974542" class="contact_subtitle">+998 94 397 4542</a>
         </li>
     </ul>
-    <div class="work">
+    <div class="work" id="work">
         <h2 class="work_title">
             What I do
         </h2><!-- nothing  -->
@@ -70,6 +70,27 @@
                 <h2 class="work_text">Web <br>Design</h2>
             </div>
         </div>
+    </div>
+    <div class="skills">
+        <h2 class="skills_title">
+            My skills
+        </h2>
+        <ul class="skills_body">
+            <li class="skill_body">50% <span>HTML</span></li>
+            <li class="skill_body">20% <span>CSS</span></li>
+            <li class="skill_body">10% <span>JS</span></li>
+            <li class="skill_body">2% <span>PHP</span></li>
+        </ul>
+    </div>
+    <div class="touch" id="touch">
+        <h2 class="touch_title">Get in touch</h2>
+        <form action="">
+            <input type="text" class="touch_name" placeholder="First name">
+            <input type="text" class="touch_lastname" placeholder="Last name">
+            <input type="email" class="touch_email" placeholder="Email">
+            <input type="tel" class="touch_phone" placeholder="Phone number">
+            <textarea name="message" id="message" rows="4" cols="70" placeholder="Type your message"></textarea>
+        </form>
     </div>
     <script src="script.js"></script>
 </body>
