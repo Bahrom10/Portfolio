@@ -61,6 +61,11 @@ body{
     justify-content: space-around;
 }
 
+.main_left{
+    display: flex;flex-direction: column;
+    gap: 24px;
+}
+
 .main_title{
     color: #FFFFFF;
     font-size: 48px;
