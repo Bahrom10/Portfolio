@@ -10,3 +10,10 @@
     display: flex;
     flex-direction: row;
 }
+.navbar_title{
+    font-size: 36;
+}
+.navbar_link{
+    font-weight: 400;
+    font-size: 18;
+}
