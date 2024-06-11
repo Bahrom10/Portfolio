@@ -54,6 +54,7 @@ body{
     font-weight: 400;
     font-size: 18;
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 
@@ -138,24 +139,71 @@ body{
     max-width: 745px;
 }
 
+.contacts{
+    padding: 40px 225px;    
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
 .contact{
-    padding: 40px 225px;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact_circle{
-    width: 12px;
-    height: 12px;
-    background: #27AE60;
-    border-radius: 50%;
-    z-index: 2;
-}
-
-.contact_circle::after{
-    border-radius: 50%;
-    border: 12px solid #212121;
-    z-index: 0;
     width: 62px;
     height: 62px;
+    border-radius: 50%;
+    background: #212121;
+    z-index: 0;
+    position: relative;
+}
+
+.contact_title{
+    font-size: 18px;
+}
+
+.contact_subtitle{
+    display: flex;
+    justify-items: center;
+    font-size: 18px;
+    max-width: 175px;
+}
+
+.contact_circle_green{
+    background: #27AE60;
+    height: 12px;
+    width: 12px;
+    z-index: 3;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.work{
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.work_title{
+    font-size: 48px;
+}
+
+.work_spheres{
+    display: grid;
+    
+}
+
+.work_sphere{
+    background: #212121;
+    padding: 50px 40px 70px 40px;
 }
