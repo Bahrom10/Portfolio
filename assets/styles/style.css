@@ -26,6 +26,7 @@
     font-family: "DM Sans";
     font-weight: 700;
     box-sizing: border-box;
+    color: #FFFFFF;
 }
 
 body{
@@ -59,6 +60,8 @@ body{
 .main{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
 .main_title{
@@ -116,4 +119,43 @@ body{
     width: 650px;
     height: 650px;
     display: block;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__title{
+    font-size: 48px;
+}
+
+.about_text{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    max-width: 745px;
+}
+
+.contact{
+    padding: 40px 225px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.contact_circle{
+    width: 12px;
+    height: 12px;
+    background: #27AE60;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.contact_circle::after{
+    border-radius: 50%;
+    border: 12px solid #212121;
+    z-index: 0;
+    width: 62px;
+    height: 62px;
 }
