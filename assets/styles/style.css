@@ -34,7 +34,7 @@ html{
 }
 
 body {
-    padding: 40px 90px;
+    padding: 0 90px 40px 90px;
     background-color: #171717;
     transition: all .3s ease;
 }
@@ -43,7 +43,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 130px;
+    margin-bottom: 100px;
 }
 .navbar_title {
     color: #FFFFFF;
@@ -293,7 +293,7 @@ body {
     background: none;
     outline: none;
     border: solid 1px #4f4f4f;
-    resize: none;
+    resize: vertical;
     padding: 10px 0 0 12px;
     margin-bottom: 30px;
 }
