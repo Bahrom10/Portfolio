@@ -306,11 +306,16 @@ body {
     color: #FFFFFF;
     transition: all 0.3s ease;
     cursor: pointer;
-    transform: translate(-50%,-50%);
     max-width: 150px;
 }
 
 .form_btn:hover {
     background: #fff;
     color: black;
+}
+
+.form_bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
